@@ -11,7 +11,6 @@
 
 ::-webkit-scrollbar {
     background: none;
-    /*background: none; */
     width: 4px;
 
 }
@@ -27,7 +26,6 @@
 }
 
 body {
-    /* background-color: #0a192f; */
     background: linear-gradient(130deg, #0a192f 60%, whitesmoke);
     color: #8892b0;
 }
@@ -64,7 +62,6 @@ nav {
 }
 
 .logo {
-    /* color: #64ffda; */
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
@@ -91,32 +88,17 @@ nav {
     writing-mode: vertical-rl;
     text-orientation: sideways;
     display: inline-block;
-
     color: transparent;
-    /* Remove o preenchimento interno do texto */
     -webkit-text-stroke: 2px white;
-    /* Adiciona o contorno */
-
-
 }
 
 .nav-links a {
-    /*
-    color: #ccd6f6;
-    
-    color: transparent;
-    */
     color: white;
     font-weight: bold;
     font-size: 10pt;
-
-
     text-decoration: none;
     margin-left: 30px;
     transition: color 0.3s;
-
-
-
 }
 
 .nav-links a:hover {
@@ -154,12 +136,6 @@ nav {
 .btn {
     display: inline-block;
     padding: 15px 30px;
-
-    /*
-    
-    border: 1px solid white;
-    */
-    /* background: rgba(255, 255, 255, 0.151); */
     background: white;
     color: #112240;
     text-decoration: none;
@@ -168,11 +144,9 @@ nav {
     border-radius: 30px;
     margin-right: 20px;
     font-weight: bold;
-    /* opacity: 0.5; */
 }
 
 .btn:hover {
-    /* opacity: 1; */
     background-color: rgba(255, 255, 255, 0.500);
     color: #112240;
 }
@@ -200,12 +174,11 @@ nav {
 .project-card {
     background-color: #112240;
     border-radius: 4px;
-    /* transition: transform 0.3s; */
 }
 
 .project-card:hover {
-    transform: translateY(-20px);
-    box-shadow: 0px 10px 0px 4px rgba(0, 0, 0, 0.40);
+    transform: translateY(-10px);
+    transition: transform 0.3s;
 }
 
 .project-card h3 {
@@ -251,29 +224,37 @@ nav {
     .hero-content h2 {
         font-size: 40px;
     }
-    .text-na-vertical{
+
+    .text-na-vertical {
         opacity: 0.1;
     }
-    .hero-content p{
+
+    .hero-content p {
         font-size: 16pt;
     }
-    .btn{
+
+    .btn {
         padding: 20px 20px;
         margin: 10px;
     }
-    .section-title{
+
+    .section-title {
         margin-left: 0px;
     }
-    .projects-grid{
+
+    .projects-grid {
         padding-left: 0px;
     }
-    .project-card{
+
+    .project-card {
         border-radius: 20px;
     }
-    .project-card h3{
+
+    .project-card h3 {
         border-radius: 20px 20px 0px 0px;
     }
-    .project-card p{
+
+    .project-card p {
         border-radius: 0px 0px 20px 20px;
     }
 }
