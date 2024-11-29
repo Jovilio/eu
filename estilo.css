@@ -11,7 +11,8 @@
 
 ::-webkit-scrollbar {
     background: none;
-    width: 4px;
+    width: 6px;
+    background-color: transparent;
 
 }
 
@@ -26,7 +27,8 @@
 }
 
 body {
-    background: linear-gradient(130deg, #0a192f 60%, whitesmoke);
+    /* background: linear-gradient(130deg, #0a192f 60%, whitesmoke); */
+    background: #222;
     color: #8892b0;
 }
 
@@ -36,12 +38,14 @@ body {
     text-align: center;
     font-size: 10pt;
     font-weight: 100;
+    border-bottom: solid 1px whitesmoke;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    margin-top: 20px;
 }
 
 
@@ -50,7 +54,8 @@ nav {
     top: 0px;
     left: 0px;
     width: 100%;
-    background-color: rgba(10, 25, 47, 1);
+    /* background-color: rgba(10, 25, 47, 1); */
+    background: #222;
     padding: 20px 0;
     z-index: 100;
 }
@@ -173,33 +178,78 @@ nav {
 
 .project-card {
     background-color: #112240;
-    border-radius: 4px;
+    border-radius: 10px;
+    padding: 40px;
+    border: solid 6px rgba(245, 245, 245, 0.021);
+    cursor: pointer;
 }
 
 .project-card:hover {
-    transform: translateY(-4px);
-    /* transition: transform 0.3s; */
+    background: white;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.212);
 }
 
 .project-card h3 {
     color: #ccd6f6;
     margin-bottom: 15px;
-    padding: 30px;
-    background: rgba(255, 255, 255, 0.185);
-    border-radius: 4px 4px 0px 0px;
+    /* background: rgba(255, 255, 255, 0.185); */
+    border-radius: 6px 6px 0px 0px;
+    padding: 20px;
 }
 
 .project-card p {
-    padding: 30px;
-    border-radius: 0px 0px 4px 4px;
+    border-top: solid 1px rgba(245, 245, 245, 0.192);
+    padding: 10px;
+    border-radius: 0px 0px 6px 6px;
 }
 
 .radape {
-    background: white;
+    z-index: 100;
+    background: whitesmoke;
     width: 100%;
-    padding: 100px 40%;
+    padding: 100px;
     margin-top: 100px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border-top: solid 1px whitesmoke;
+}
+
+.causas {
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    padding: 20px;
+}
+
+.apoiarCausas {
+    font-size: 12pt;
+}
+
+.causas div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    opacity: 0.6;
+}
+
+.causas div:hover {
+    opacity: 1;
+}
+
+.causas div img {
+    width: 40px;
+}
+
+.causas div span {
+    font-size: 11pt;
+}
+
+.ano {
     font-size: 10pt;
 }
 
