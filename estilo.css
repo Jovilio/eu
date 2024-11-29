@@ -27,7 +27,6 @@
 }
 
 body {
-    /* background: linear-gradient(130deg, #0a192f 60%, whitesmoke); */
     background: #222;
     color: #8892b0;
 }
@@ -45,7 +44,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    /* margin-top: 20px; */
 }
 
 
@@ -54,7 +52,6 @@ nav {
     top: 0px;
     left: 0px;
     width: 100%;
-    /* background-color: rgba(10, 25, 47, 1); */
     background: #222;
     padding: 20px 0;
     z-index: 100;
@@ -111,20 +108,17 @@ nav {
 }
 
 .hero {
-    /* display: flex; */
-    /* align-items: center; */
-    /* background: orange; */
     padding: 40px 40px 40px 200px;
-    position: relative;
 }
 
 .hero-content {
-    /* max-width: 800px; */
+    position: relative;
     width: 100%;
     padding: 40px;
     border-radius: 40px;
     background: whitesmoke;
 }
+
 
 .hero-content h1 {
     font-size: 80px;
@@ -145,6 +139,7 @@ nav {
 }
 
 .btn {
+    z-index: 10;
     display: inline-block;
     padding: 15px 30px;
     background: white;
@@ -163,7 +158,7 @@ nav {
 }
 
 .section {
-    padding: 100px 0;
+    padding-top: 200px;
 }
 
 .section-title {
@@ -172,6 +167,15 @@ nav {
     margin-bottom: 50px;
     margin-left: 180px;
 
+}
+
+.section-title-extra {
+    font-size: 12pt;
+    margin-top: 50px;
+    padding-left: 180px;
+    padding-right: 150px;
+    opacity: 0.6;
+    font-weight: normal;
 }
 
 .projects-grid {
@@ -183,7 +187,7 @@ nav {
 }
 
 .project-card {
-    background: radial-gradient(rgba(255, 255, 255, 0.452), #222);
+    background: #313131;
     border-radius: 20px;
     border-radius: 10px;
     padding: 40px;
