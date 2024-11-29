@@ -38,6 +38,10 @@ body {
     font-size: 10pt;
     font-weight: 100;
     border-bottom: solid 1px whitesmoke;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
 }
 
 .container {
@@ -223,6 +227,7 @@ nav {
     flex-direction: column;
     align-items: center;
     align-content: center;
+    justify-content: center;
     border-top: solid 1px whitesmoke;
 }
 
@@ -264,13 +269,19 @@ nav {
 
 
 @media (max-width: 768px) {
+    nav{
+        top: -2px;
+    }
+    .hero{
+        padding: 0px;
+    }
     .hero-content h1 {
-        font-size: 50px;
-        content: "Jovilio Zua";
+        font-size: 28pt;
+        /* content: "Jovilio Zua"; */
     }
 
     .hero-content h2 {
-        font-size: 40px;
+        font-size: 20pt;
     }
 
     .text-na-vertical {
@@ -278,7 +289,7 @@ nav {
     }
 
     .hero-content p {
-        font-size: 16pt;
+        font-size: 12pt;
     }
 
     .btn {
@@ -288,6 +299,9 @@ nav {
 
     .section-title {
         margin-left: 0px;
+    }
+    .section-title-extra{
+        padding: 20px;
     }
 
     .projects-grid {
@@ -304,5 +318,9 @@ nav {
 
     .project-card p {
         border-radius: 0px 0px 20px 20px;
+    }
+    .causas {
+        /* background: orange; */
+        flex-direction: column;
     }
 }
