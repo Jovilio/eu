@@ -242,7 +242,7 @@ footer > p {
 /* Desktops (≥1024px) */
 @media (min-width: 1024px) {
     header {
-        padding: 50px 50px;
+        padding: 50px 100px;
     }
 
     header > h1 {
