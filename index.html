@@ -1,175 +1,137 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-    <!-- <base href="https://www.example.com"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jovilio Zua | Portfolio</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <title>Portfólio - Jovilio Zua</title>
 
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"> -->
+    <!-- Ícones -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <link rel="shortcut icon" href="provisorio.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilo.css">
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="info">
-        Esta página refere-se a um portfolio pessoal
-    </div>
 
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Jovilio da Conc. Q. Zua</h1>
+        <p>Engenheiro Informático <br> Desenvolvedor Web</p>
+        <p>Residência atual: Luanda, Angola</p>
+        <p>Email: <a href="mailto:jovilio.dcq.zua@gmail.com">jovilio.dcq.zua@gmail.com</a></p>
+        <p>Tel: <a href="tel:+244933290206">(+244) 933 290 206</a></p>
+    </header>
 
+    <!-- Navegação -->
     <nav>
-        <div class="container nav-content">
-            <a href="#" class="logo">
-                <div class="home-moderna"></div>
-            </a>
-            <div class="nav-links">
-                <a href="#"></a>
-            </div>
-        </div>
+        <ul>
+            <li><a href="#perfil">Perfil</a></li>
+            <li><a href="#competencias">Competências</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
     </nav>
 
-    <div class="text-na-vertical">
-        JOVILIO
-    </div>
-
-    <section class="hero">
-
-        <div class="container">
-            <div class="hero-content" data-aos="fade-up">
-
-                <h1>Jovilio D'C. Q. Zua</h1>
-                <h2>Desenvolvedor Web</h2>
-                <p>
-                    Desenvolvedor apaixonado por criar experiências digitais excepcionais.
-                    Especializado em desenvolvimento de "Sites" interativos e estaticos com interfaces atraentes e com
-                    experiencias únicas, usando tecnologias modernas para desenvolvimento.
-                </p>
-                <a href="tel:+244:933290206" class="btn">WhatsApp/Telegram</a>
-                <a href="mailto:famosojovilio@gmail.com" class="btn">Contato Por Email</a>
-            </div>
-        </div>
+    <!-- Perfil -->
+    <section id="perfil">
+        <h2>Perfil Profissional</h2>
+        <p>Engenheiro Informático com experiência em desenvolvimento de sistemas empresariais, suporte técnico e organização de processos digitais. Atuação sólida em tecnologias web (HTML, JavaScript, VueJS), bases de dados (MySQL, MariaDB), UI/UX e ferramentas de Inteligência Artificial para otimização de processos.</p>
     </section>
 
-    <!-- projectos  -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Projetos em Destaque</h2>
-            <div class="projects-grid">
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <h3>LandPage & SPA (Single Page Aplication)</h3>
-                    <p>Paginas Estaticas e Dasboards Com Frameork Front (VueJS, ReactJS)</p>
-                </div>
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <h3>Portfolio Website</h3>
-                    <p>Website responsivo construído com HTML, CSS e JavaScript</p>
-                </div>
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <h3>API (Aplication Programing Interface)</h3>
-                    <p>Desenvolvimento de API de requisição com Flask + bd Rel</p>
-                </div>
-            </div>
-            <h2 class="section-title-extra" data-aos="fade-up">
-                Alguns projectos pessoais já foram descartados e outros estão em fase de desenvolvimento...Espero poder
-                ajudar com as minhas habilidades referidas na página.
-            </h2>
-        </div>
-
+    <!-- Competências -->
+    <section id="competencias">
+        <h2>Competências Técnicas</h2>
+        <ul class="skills-list">
+            <li>HTML, CSS, JavaScript, VueJS, ReactJS</li>
+            <li>Python, PHP</li>
+            <li>MySQL, MariaDB</li>
+            <li>UI/UX Design</li>
+            <li>Git e GitHub</li>
+            <li>Aplicações de IA para automação</li>
+        </ul>
     </section>
 
-    <!-- tecnologias -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Experiências</h2>
-            <div class="projects-grid">
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <h3>Html, CSS, JS</h3>
-                    <p>Pagina De Demostranção Única Para Publicidade Corporativa Ou Pessoal.</p>
-                </div>
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <h3>Ferramentas FrontEnd</h3>
-                    <p>VueJS, ReactJS, Flask, GUI para desenvolvimento Java</p>
-                </div>
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <h3>Ferramentas BackEnd</h3>
-                    <p>Python (Flask), PHP, SQL</p>
-                </div>
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <h3>Modelagem & Prototipação</h3>
-                    <p>SQL, DrawIo, Metodologias ágeis, Levantamento de requisitos, prototipação (AdobeXD, Canvas)</p>
-                </div>
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <h3>IAs (Inteligências Artificiais)</h3>
-                    <p>Geradores de text, Geradores de Imagens, Modelagem de conceitos, Fluxogramas, Consultas gerais...
-                    </p>
-                </div>
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <h3>SPAs & Design</h3>
-                    <p>SPAs Para Desenvolvimento, Avaliação e sugestão De Dashboards. UI & UX Design para desenv. de
-                        conteudo digital interativo, design sugestivo</p>
-                </div>
-
-            </div>
-        </div>
-
-
-
+    <!-- Experiência -->
+    <section id="experiencia">
+        <h2>Experiência Profissional</h2>
+        <ul class="experience-list">
+            <li>
+                <strong>Desenvolvedor Web & Gestor de Sistemas - Freelancer (2022 – Atual)</strong><br>
+                Desenvolvimento e implementação de sistemas personalizados, gestão de bases de dados, suporte técnico e criação de sites institucionais.
+            </li>
+            <li>
+                <strong>Técnico de Modelagem e Design (2020 – 2022)</strong><br>
+                Modelagem 2D/3D, layouts interativos e design UI/UX.
+            </li>
+            <li>
+                <strong>Professor (2018 – 2024)</strong><br>
+                Matemática, Física, Educação Laboral e outras disciplinas técnicas.
+            </li>
+        </ul>
     </section>
 
-    <footer class="radape">
+    <!-- Formação -->
+    <section id="formacao">
+        <h2>Formação Acadêmica</h2>
+        <ul class="education-list">
+            <li>
+                Licenciatura em Engenharia Informática -
+                <a href="https://www.universidademetodista.ao/" target="_blank">
+                    Universidade Metodista de Angola
+                </a> (2024)
+            </li>
+        </ul>
+    </section>
 
-        <h1 class="apoiarCausas">
-            Apoie as causas
-        </h1>
+    <!-- Projetos -->
+    <section id="projetos">
+        <h2>Projetos Recentes</h2>
+        <ul class="experience-list">
+            <li>
+                <strong>
+                    <a href="https://www.cis-edu.org/" target="_blank">CIS - Centro Internacional de Seminars</a>
+                </strong><br>
+                Desenvolvimento e colaboração técnica em sistemas web e melhorias visuais.
+            </li>
+            <li>
+                <strong>
+                    <a href="https://www.universidademetodista.ao/" target="_blank">Universidade Metodista de Angola</a>
+                </strong><br>
+                Colaboração no desenvolvimento e otimização do site institucional.
+            </li>
+        </ul>
+    </section>
 
-        <div class="causas">
+    <!-- Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>📧 Email: <a href="mailto:jovilio.dcq.zua@gmail.com">jovilio.dcq.zua@gmail.com</a></p>
+        <p>📱 Telefone: <a href="tel:+244933290206">(+244) 933 290 206</a></p>
+        <p>🌐 GitHub: <a href="https://github.com/Jovilio" target="_blank">github.com/Jovilio</a></p>
+    </section>
 
-
-            <div title="Faça reciclagem sempre que puder">
-                <img src="reciclagemIco.png" class="iconeDeCausas" alt="icone de reciclagem">
-                <span>
-                    Seja um reciclador
-                </span>
-            </div>
-
-            <div title="Reduza o aquecimento com plantações de arvores">
-                <img src="arv.png" class="iconeDeCausas" alt="icone de floresta">
-                <span>
-                    Plante arvores
-                </span>
-            </div>
-
-            <div title="Crie api de seus projectos para integração">
-                <img src="api.png" class="iconeDeCausas" alt="icone de api">
-                <span>
-                    api para integrar
-                </span>
-            </div>
-
-        </div>
-
-        <div class="ano">
-            <span> Novembro de 2024</span>
-        </div>
-
-
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Jovilio Zua - Todos os direitos reservados</p>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            AOS.init({
-                duration: 1000,
-                once: true,
-                offset: 100
-            });
-        });
-    </script>
+    <!-- Botões Flutuantes -->
+    <div class="floating-buttons">
+        <a href="#" class="btn-top" id="btnTop" title="Voltar ao topo">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+        <a href="https://wa.me/244933290206" target="_blank" class="btn-whatsapp" title="Falar no WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="cvJovilioZua_Agosto2025.pdf" download class="btn-cv" title="Baixar CV">
+            <i class="fas fa-file-download"></i>
+        </a>
+    </div>
 
+    <!-- Script -->
+    <script src="script.js"></script>
 </body>
-
 </html>

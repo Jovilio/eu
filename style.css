@@ -1,0 +1,276 @@
+/* ===========================
+   Reset básico (Mobile First)
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===========================
+   Cabeçalho
+=========================== */
+header {
+    background: linear-gradient(48deg, #003366 90%, orange 10%);
+    color: white;
+    padding: 30px 15px;
+}
+
+header > h1 {
+    font-size: 28pt;
+}
+
+header > p {
+    font-size: 12pt;
+    margin-top: 5px;
+}
+
+header > p > a {
+    color: white;
+    font-weight: bold;
+}
+
+/* ===========================
+   Navegação
+=========================== */
+nav {
+    background: #0055aa;
+    padding: 15px 0;
+    transform: translateY(-1px);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 0 10px;
+    -webkit-overflow-scrolling: touch;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul::-webkit-scrollbar {
+    height: 6px;
+}
+
+nav ul::-webkit-scrollbar-thumb {
+    background: #003366;
+    border-radius: 3px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14pt;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===========================
+   Seções
+=========================== */
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 25px 15px;
+    background: white;
+    border-bottom: solid 1px #80808057;
+}
+
+h2 {
+    color: #003366;
+    margin-bottom: 10px;
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+.skills-list,
+.experience-list,
+.education-list {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/* ===========================
+   Projetos Recentes
+=========================== */
+.project-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 8px;
+    color: white;
+    background: #0055aa;
+    padding: 8px 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.project-card a:hover {
+    background: #003366;
+}
+
+/* ===========================
+   Rodapé
+=========================== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #003366;
+    color: white;
+    margin-top: 20px;
+}
+
+footer > p {
+    font-size: 10pt;
+}
+
+/* ===========================
+   Botões flutuantes
+=========================== */
+.floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.floating-buttons a {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.floating-buttons a:hover {
+    transform: scale(1.1);
+}
+
+.btn-whatsapp { background-color: #25d366; }
+.btn-cv { background-color: #003366; }
+.btn-top { background-color: #ff6600; display: none; }
+
+/* ===========================
+   Media Queries
+=========================== */
+
+/* Tablets (≥768px) */
+@media (min-width: 768px) {
+    header {
+        padding: 40px 30px;
+    }
+
+    header > h1 {
+        font-size: 34pt;
+    }
+
+    header > p {
+        font-size: 14pt;
+    }
+
+    nav a {
+        font-size: 16pt;
+    }
+
+    section {
+        padding: 35px 25px;
+    }
+
+    h2 {
+        font-size: 26pt;
+    }
+
+    .project-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktops (≥1024px) */
+@media (min-width: 1024px) {
+    header {
+        padding: 50px 50px;
+    }
+
+    header > h1 {
+        font-size: 40pt;
+    }
+
+    header > p {
+        font-size: 16pt;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 25px;
+    }
+
+    nav a {
+        font-size: 18pt;
+    }
+
+    section {
+        padding: 40px 30px;
+    }
+
+    h2 {
+        font-size: 30pt;
+    }
+
+    .project-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
